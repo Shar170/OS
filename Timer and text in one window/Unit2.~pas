@@ -46,7 +46,7 @@ begin
     Inc(index);
     if index>100000 then
     index:=0;
-  if terminated then exit;
+if terminated then exit;
 end;
 end;
 
