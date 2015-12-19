@@ -1,0 +1,5 @@
+inherited Form1_Windows: TForm1_Windows
+  ClientHeight = 214
+  ClientWidth = 299
+  DesignerMasterStyle = 0
+end

@@ -1,0 +1,61 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 239
+  ClientWidth = 307
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Button1: TButton
+    Position.X = 32.000000000000000000
+    Position.Y = 32.000000000000000000
+    Size.Width = 121.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = #1089#1086#1079#1076#1072#1090#1100' '#1088#1072#1079#1076#1077#1083
+    OnClick = Button1Click
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 1
+    Text = 'Fitipi BOOOOM'
+    Position.X = 160.000000000000000000
+    Position.Y = 80.000000000000000000
+    Size.Width = 105.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit2: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 2
+    Text = '1Dihadaha'
+    Position.X = 160.000000000000000000
+    Position.Y = 32.000000000000000000
+    Size.Width = 105.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Button2: TButton
+    Position.X = 32.000000000000000000
+    Position.Y = 80.000000000000000000
+    Size.Width = 121.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = #1074#1087#1080#1089#1072#1090#1100' '#1074' '#1092#1072#1081#1083
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    Position.X = 32.000000000000000000
+    Position.Y = 128.000000000000000000
+    Size.Width = 233.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    Text = #1091#1076#1072#1083#1077#1085#1080#1077' '#1089#1086#1079#1076#1072#1085#1085#1099#1093' '#1088#1072#1079#1076#1077#1083#1086#1074
+    OnClick = Button3Click
+  end
+end

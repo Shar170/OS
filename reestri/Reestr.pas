@@ -1,0 +1,65 @@
+unit Reestr;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
+  FMX.Controls.Presentation, FMX.StdCtrls, Registry, FMX.Edit;
+
+type
+  TForm1 = class(TForm)
+    Button1: TButton;
+    Edit1: TEdit;
+    Edit2: TEdit;
+    Button2: TButton;
+    Button3: TButton;
+    procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.fmx}
+{$R *.Windows.fmx MSWINDOWS}
+
+procedure TForm1.Button1Click(Sender: TObject);
+var RegIni:TRegistry;
+
+begin
+  RegIni:=TRegIniFile.Create;
+  RegIni.OpenKey('1Software',true);
+  RegIni.OpenKey(edit2.Text, true);
+  RegIni.Free;
+  ShowMessage('Созданно');
+end;
+
+procedure TForm1.Button2Click(Sender: TObject);
+var RegIni:TRegIniFile;
+begin
+  RegIni:=TRegIniFile.Create;
+  RegIni.OpenKey('1Software',true);
+  RegIni.OpenKey(edit2.Text, true);
+  RegIni.WriteString('Gokilynda', 'ParamPamPam', Edit1.Text);
+  RegIni.Free;
+  ShowMessage('Добавленно');
+end;
+
+procedure TForm1.Button3Click(Sender: TObject);
+var RegIni:TRegistry;
+begin
+  RegIni:=TRegistry.Create;
+  RegIni.DeleteKey('1Software');
+  RegIni.Free;
+  ShowMessage('Удаленно');
+end;
+
+end.
